@@ -1,0 +1,26 @@
+{
+  "name": "rooms.db",
+  "version": "0.0.01",
+  "description": "Real Time Communication and Collaboration database connector",
+  "main": "index.js",
+  "scripts": {
+    "test": "connectToDatabase"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EladElrom/RoomsJS.git"
+  },
+  "dependencies": {
+    "mysql": "2.0.0-alpha7",
+    "rooms": "0.0.22"
+  },
+  "keywords": [
+    "rooms.db",
+    "rooms",
+    "collaboration",
+    "db connector"
+  ],
+  "author": "Elad Elrom",
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
