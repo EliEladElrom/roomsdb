@@ -1,6 +1,6 @@
 {
   "name": "rooms.db",
-  "version": "0.0.04",
+  "version": "0.0.05",
   "description": "JavaScript Node.JS module for creating rooms and streaming data between front-end and back-end",
   "main": "index.js",
   "repository": {
