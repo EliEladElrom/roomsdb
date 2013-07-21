@@ -15,7 +15,8 @@ function VO(id, name) {
 
 function getitems(data, dbconnectorCallBackToRooms) {
   var sqlString = "SELECT * FROM test.users WHERE name != ''";
-  this.sqlCommand(sqlString,
+  var connector = this.getConnector();
+  connector.runSQLCommand(sqlString,
     function (rows) {
       var vo = new VO(rows[0].id, rows[0].name);
       dbconnectorCallBackToRooms(data, vo);
