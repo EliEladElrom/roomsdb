@@ -26,11 +26,11 @@ function insertchatmessage(data, dbconnectorCallBackToRooms) {
   }
 
   var chatMessage = new Chat({
-    chatMessage: 'test',
-    roomId: '1',
-    gravatar: 'http://www.gravatar.com/avatar/09fab8bf1c3a9a3d15c4497a050db477?s=200&r=pg&d=404',
-    email: 'elad.ny@gmail.com',
-    userName: 'elad'
+    chatMessage: data.params.chatMessage,
+    roomId: data.params.roomId,
+    gravatar: data.params.gravatar,
+    email: data.params.email,
+    userName: data.params.userName
   });
 
   chatMessage.save(function (err) {
