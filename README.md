@@ -27,7 +27,7 @@ It's recommended to use `engine.io` since it's the high level API of `socket.io`
     7. Subscribe to data VO.
     8. AMS/FMS Flash Webcam fallback
     9. HTML5 Webcam (still in development)
-    10. Database connector (such as mysql, mongodb).
+    10. Database connector (such as mysql, mongodb, levelDB).
     11. Switch different transporters: currently supporting `socket.io`, `engine.io` and `SockJS`.
     12. Angularjs implementation
 
@@ -82,6 +82,8 @@ roomdb.setServices('services_sample/', app); // pass the app to get rest service
 // roomdb.connectToDatabase('mysql', 'localhost', {user: 'root', password: ''});
 // MongoDB
 roomdb.connectToDatabase('mongodb', 'mongodb://localhost/test', {});
+// LevelDB
+roomdb.connectToDatabase('leveldb', './mydb', {});
 
 // set rooms
 rooms = new rooms({
@@ -103,6 +105,7 @@ services_example/
   |  |  |- getitems.js [mySQL data source example]
   |  |  |- getnames.js [Static data example]
   |  |  |- insertchatmessage.js [Mongodb example]
+  |  |  |- addblock.js [LevelDB example]
 </pre>
 
 Front-end example of getting the number of visitors and data from external sources:
@@ -125,7 +128,7 @@ Below is a ten thousand foot diagram that shows how the different pieces of the 
 ![backend diagram](https://raw.github.com/eladelrom/poet/ei-pages/effectiveidea/public/images/roomsjs-diagram1.png)
 <br><br>
 
-See more information here about init concept read here: [http://effectiveidea.com/_posts/roomsjs](http://effectiveidea.com/_posts/roomsjs)
+See more information see here: [https://www.apress.com/us/book/9781484220436](https://www.apress.com/us/book/9781484220436)
 <br><br>
 
 ## LICENSE
