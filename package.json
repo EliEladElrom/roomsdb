@@ -1,16 +1,13 @@
 {
   "name": "rooms.db",
-  "version": "0.1.1-77",
-  "description": "JavaScript Node.JS module for creating rooms and streaming data between front-end and back-end",
+  "version": "0.1.1-79",
+  "description": "update mongodb to include options when connecting",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/EladElrom/roomsdb"
   },
   "dependencies": {
-    "mysql": "2.0.0-alpha7",
-    "mongoose": "^5.2.15",
-    "level": "^4.0.0"
   },
   "keywords": [
     "rooms.db",
