@@ -89,7 +89,10 @@ roomdb.setServices('services_sample/', app); // pass the app to get rest service
 // MongoDB
 // roomdb.connectToDatabase('mongodb', 'mongodb://localhost/test', {});
 // LevelDB
-roomdb.connectToDatabase('leveldb', './mydb', {});
+// roomdb.connectToDatabase('leveldb', './mydb', {});
+// postgres
+// roomdb.connectToDatabase('postgresdb', 'URL', {user: 'my_user', password: 'my_password', port: 5432, database: 'my_database'});
+
 
 let transporterCallback = (type, data) => {
     console.log('transporterCallback :: type: ' + type + '' + ', data: ' +JSON.stringify( data));
@@ -163,6 +166,7 @@ services_example/
   |  |  |- getnames.js [Static data example]
   |  |  |- insertchatmessage.js [Mongodb example]
   |  |  |- addBlock.js [levelDB example]
+  |  |  |- getId.js [postgres example]  
 </pre>
 
 Front-end example of getting the number of visitors and data from external sources:

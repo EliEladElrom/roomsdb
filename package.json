@@ -1,7 +1,7 @@
 {
   "name": "rooms.db",
-  "version": "0.1.1-79",
-  "description": "update mongodb to include options when connecting",
+  "version": "0.1.1-80",
+  "description": "adding postgres database connector",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
     "db connector",
     "mysql",
     "mongodb",
+    "postgres",
     "leveldb",
     "websocket database"
   ],
