@@ -91,7 +91,7 @@ roomdb.setServices('services_sample/', app); // pass the app to get rest service
 // LevelDB
 // roomdb.connectToDatabase('leveldb', './mydb', {});
 // postgres
-// roomdb.connectToDatabase('postgresdb', 'URL', {user: 'my_user', password: 'my_password', port: 5432, database: 'my_database'});
+// roomdb.connectToDatabase('postgresdb', 'URL', {user: 'my_user', password: 'my_password', port: 5432, database: 'my_database', timeout: 6000});
 
 
 let transporterCallback = (type, data) => {

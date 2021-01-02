@@ -1,7 +1,7 @@
 {
   "name": "rooms.db",
-  "version": "0.1.1-80",
-  "description": "adding postgres database connector",
+  "version": "0.1.1-81",
+  "description": "adding timeout to postgres database connector",
   "main": "index.js",
   "repository": {
     "type": "git",
